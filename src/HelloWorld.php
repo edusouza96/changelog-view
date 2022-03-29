@@ -1,10 +1,11 @@
 <?php
+
 namespace Edusouza96\ChangelogView;
 
 class HelloWorld
 {
-    public function handler()
+    static function get()
     {
-        echo 'Hello World';
+        return 'Hello World';
     }
 }

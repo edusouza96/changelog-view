@@ -8,12 +8,14 @@
             "email": "eduardo_souza96@hotmail.com"
         }
     ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.3.0"
+    },
     "autoload": {
         "psr-4": {
-            "Edusouza96\\ChangelogView\\": "src"
+            "Edusouza96\\ChangelogView\\": "src/"
         }
     },
-    "require": {},
-    "license": "MIT",
-    "minimum-stability": "stable"
+    "license": "MIT"
 }

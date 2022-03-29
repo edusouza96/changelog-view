@@ -1,5 +1,9 @@
 <?php
 
-require __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
-(new \Edusouza96\ChangelogView\HelloWorld)->handler();
+use Edusouza96\ChangelogView\HelloWorld;
+
+$helloWorld = new HelloWorld();
+
+echo $helloWorld::get();
