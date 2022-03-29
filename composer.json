@@ -13,5 +13,7 @@
             "Edusouza96\\ChangelogView\\": "src"
         }
     },
-    "require": {}
+    "require": {},
+    "license": "MIT",
+    "minimum-stability": "dev"
 }
