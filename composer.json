@@ -1,0 +1,17 @@
+{
+    "name": "edusouza96/changelog-view",
+    "description": "Um Pacote para exibir o changelog do sistema",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Eduardo Souza",
+            "email": "eduardo_souza96@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Edusouza96\\ChangelogView\\": "src"
+        }
+    },
+    "require": {}
+}
