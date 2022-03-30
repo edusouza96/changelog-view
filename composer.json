@@ -1,6 +1,6 @@
 {
     "name": "edusouza96/changelog-view",
-    "description": "Changelog do sistema",
+    "description": "Pacote para gerar link de visualização do seu changelog",
     "type": "library",
     "authors": [
         {
@@ -9,8 +9,11 @@
         }
     ],
     "minimum-stability": "stable",
+    "license": "MIT",
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "illuminate/support": "*",
+        "illuminate/routing": "*"
     },
     "autoload": {
         "psr-0": {
