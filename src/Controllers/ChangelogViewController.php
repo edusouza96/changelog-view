@@ -6,7 +6,7 @@ use Illuminate\Routing\Controller as BaseController;
 
 class ChangelogViewController extends BaseController
 {
-    public function index()
+    public function index($key = null)
     {
         $fileChangelog = fopen(base_path('CHANGE_LOG.txt'), "r");
 
@@ -26,6 +26,11 @@ class ChangelogViewController extends BaseController
             }
         }
         fclose($fileChangelog);
+
+        if($key && isset($changeLog[$key])){
+            $changeLog = array($key => $changeLog[$key]);
+        }
+        
         return view('changelog-view::index', ['changeLog' => $changeLog]);
     }
 }

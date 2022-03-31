@@ -22,4 +22,5 @@ composer require edusouza96/changelog-view
 0001 - 01/01/2022 - Tarefa A
 ```
 
-- Acessar no navegador. Exemplo localhost: http://localhost:8000/v1/sobre/changelog
+- Acessar no navegador. Exemplo localhost: http://localhost:8000/sobre/changelog/versao/
+- Se quiser listar uma unica versão, pode ser passado na URL a versão desejada. Exemplo localhost: http://localhost:8000/sobre/changelog/versao/1.1

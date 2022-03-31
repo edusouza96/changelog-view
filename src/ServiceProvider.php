@@ -25,7 +25,7 @@ class ServiceProvider extends LaravelServiceProvider
     {
         $this->loadViewsFrom(__DIR__ . '/Views', 'changelog-view');
 
-        Route::prefix('v1/sobre/changelog')
+        Route::prefix('sobre/changelog/versao/')
             ->namespace('ChangelogView\Controllers')
             ->group(__DIR__ . '/Routes/web.php');
     }
