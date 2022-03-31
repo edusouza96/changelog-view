@@ -16,7 +16,7 @@ class ChangelogViewController extends BaseController
 
         while(($row = fgets($fileChangelog)) !== false){
             if($isVersion){
-                $version = $row;
+                $version = trim($row);
                 $isVersion = false;
                 $changeLog[$version] = [];
             }else if(empty(trim($row))){
@@ -30,7 +30,7 @@ class ChangelogViewController extends BaseController
         if($key && isset($changeLog[$key])){
             $changeLog = array($key => $changeLog[$key]);
         }
-        
+
         return view('changelog-view::index', ['changeLog' => $changeLog]);
     }
 }
