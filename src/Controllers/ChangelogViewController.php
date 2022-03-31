@@ -8,7 +8,7 @@ class ChangelogViewController extends BaseController
 {
     public function index()
     {
-        $fileChangelog = fopen('../CHANGE_LOG.txt', "r");
+        $fileChangelog = fopen(base_path('CHANGE_LOG.txt'), "r");
 
         $changeLog = [];
         $isVersion = true;
