@@ -7,7 +7,7 @@
 composer require edusouza96/changelog-view
 ```
 
-- Registre o provider em app\config.php na variavel providers
+- Registre o provider em config\app.php na variavel providers
 
 ```php
     ChangelogView\ServiceProvider::class
